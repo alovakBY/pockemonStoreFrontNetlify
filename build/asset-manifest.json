@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/pokemon-store/static/css/main.78201df7.css",
+    "main.js": "/pokemon-store/static/js/main.1e439e1a.js",
+    "static/media/orders-bg.jpg": "/pokemon-store/static/media/orders-bg.754e8805a0bbb3c087da.jpg",
+    "static/media/my-account-bg.jpg": "/pokemon-store/static/media/my-account-bg.e2b4f0f1551b735544ee.jpg",
+    "static/media/OpenSans-Regular.ttf": "/pokemon-store/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
+    "static/media/OpenSans-Bold.ttf": "/pokemon-store/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/pokemon-store/static/media/OpenSans-SemiBold.d7261533b9a545ddc769.ttf",
+    "static/media/empty-cart.svg": "/pokemon-store/static/media/empty-cart.8801890e2a1e90590ba2c4057e53035f.svg",
+    "static/media/shields.svg": "/pokemon-store/static/media/shields.41b30c485de684fb3a79ab54fff7219b.svg",
+    "static/media/logo.svg": "/pokemon-store/static/media/logo.d333de68ddc3943108f7b82e7d75d918.svg",
+    "static/media/swords.svg": "/pokemon-store/static/media/swords.a63fc82cbdf473329f93b4fe239a6f73.svg",
+    "static/media/sword.svg": "/pokemon-store/static/media/sword.987206a7656b7e2de406d1f94e9b111b.svg",
+    "static/media/poke-spinner.svg": "/pokemon-store/static/media/poke-spinner.85ec711da00b91c81767c5f3c0a92bcc.svg",
+    "static/media/dollar.svg": "/pokemon-store/static/media/dollar.0a14f0d30a4144a6eb8d700e724894e7.svg",
+    "static/media/wind.svg": "/pokemon-store/static/media/wind.f4d4918bccdee923c8174a99441724b2.svg",
+    "static/media/heart.svg": "/pokemon-store/static/media/heart.ea90a6e1066d3f7c798ff66eb206247d.svg",
+    "index.html": "/pokemon-store/index.html",
+    "static/media/delete-card.svg": "/pokemon-store/static/media/delete-card.4173d27ebafee93004c7d9a080b659dc.svg",
+    "static/media/shield.svg": "/pokemon-store/static/media/shield.c70232907e727112107c0a874ad30936.svg",
+    "static/media/close-cart.svg": "/pokemon-store/static/media/close-cart.1f57d7f985a0375ea85aae4fa11c172c.svg",
+    "main.78201df7.css.map": "/pokemon-store/static/css/main.78201df7.css.map",
+    "main.1e439e1a.js.map": "/pokemon-store/static/js/main.1e439e1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78201df7.css",
+    "static/js/main.1e439e1a.js"
+  ]
+}
