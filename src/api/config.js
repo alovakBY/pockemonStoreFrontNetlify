@@ -9,7 +9,7 @@ const BASE_URL =
 const config = {
   baseURL: BASE_URL,
   headers: {
-    "Access-Control-Allow-Origin": "http://localhost:3002/",
+    "Access-Control-Allow-Origin": "*",
   },
 };
 
