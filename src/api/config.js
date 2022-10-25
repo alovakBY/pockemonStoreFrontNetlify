@@ -9,7 +9,8 @@ const BASE_URL =
 const config = {
   baseURL: BASE_URL,
   headers: {
-    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin":
+      "https://singular-ganache-ea177f.netlify.app/",
   },
 };
 
