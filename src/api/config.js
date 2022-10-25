@@ -3,9 +3,9 @@ import { LOCAL_STORAGE_KEYS } from "../constants/localStorageKeys";
 import AuthService from "../services/authService";
 
 // const BASE_URL = "https://it-shatle-demo-api.herokuapp.com";
-// const BASE_URL =
-//   "https://timely-mochi-9018a9.netlify.app/.netlify/functions/server";
-const BASE_URL = "http://localhost:5000/.netlify/functions/server";
+const BASE_URL =
+  "https://timely-mochi-9018a9.netlify.app/.netlify/functions/server";
+// const BASE_URL = "http://localhost:5000/.netlify/functions/server";
 
 const config = {
   baseURL: BASE_URL,
