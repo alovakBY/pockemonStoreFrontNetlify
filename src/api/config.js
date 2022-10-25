@@ -10,7 +10,7 @@ const BASE_URL =
 const config = {
   baseURL: BASE_URL,
   headers: {
-    Origin: "https://singular-ganache-ea177f.netlify.app/",
+    "Access-Control-Request-Origin": "https://timely-mochi-9018a9.netlify.app/",
   },
   withCredentials: true,
 };
