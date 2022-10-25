@@ -10,10 +10,7 @@ const BASE_URL =
 const config = {
   baseURL: BASE_URL,
   headers: {
-    Origin: [
-      "http://localhost:3002",
-      "https://singular-ganache-ea177f.netlify.app/",
-    ],
+    Origin: "https://singular-ganache-ea177f.netlify.app/",
   },
   withCredentials: true,
 };
