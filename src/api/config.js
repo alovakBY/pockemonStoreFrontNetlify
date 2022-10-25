@@ -5,13 +5,14 @@ import AuthService from "../services/authService";
 // const BASE_URL = "https://it-shatle-demo-api.herokuapp.com";
 const BASE_URL =
   "https://timely-mochi-9018a9.netlify.app/.netlify/functions/server";
+// const BASE_URL = "http://localhost:5000/.netlify/functions/server";
 
 const config = {
   baseURL: BASE_URL,
   headers: {
-    "Access-Control-Allow-Origin":
-      "https://singular-ganache-ea177f.netlify.app/",
+    "Access-Control-Allow-Origin": "https://timely-mochi-9018a9.netlify.app",
   },
+  withCredentials: true,
 };
 
 const api = axios.create(config);
