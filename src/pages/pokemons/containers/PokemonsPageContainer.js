@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { usePagination } from "../../../hooks";
@@ -19,7 +19,7 @@ export const PokemonsPageContainer = () => {
 
   useEffect(() => {
     dispatch(actions.GET_POKEMONS_REQUEST(page));
-  }, [page]);
+  }, [page, dispatch]);
 
   return (
     <PokemonsLayout

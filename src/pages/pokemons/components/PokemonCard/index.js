@@ -1,4 +1,4 @@
-import { memo, useCallback } from "react";
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 import { ButtonCounter } from "../../../../commonComponents/ButtonCounter";
 

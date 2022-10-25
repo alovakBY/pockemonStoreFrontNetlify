@@ -43,7 +43,7 @@ export const SignUpPageContainer = () => {
     if (success) {
       dispatch(SIGN_IN_REQUEST({ email, password }));
     }
-  }, [success, email, password]);
+  }, [success, email, password, dispatch]);
 
   const handleSignUp = ({
     country,

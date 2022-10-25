@@ -9,25 +9,25 @@ import { pokemonDetailsPageSelector } from "../selectors";
 import { PokemonDetailsLayout } from "../components/PokemonDetailsLayout";
 
 export const PokemonDetailsContainer = () => {
-    const { id } = useParams();
-    const dispatch = useDispatch();
-    const { cartLoading } = useCart();
-    const { isLoading, errors, pokemonInfo } = useSelector(
-        pokemonDetailsPageSelector
-    );
-    useEffect(() => {
-        dispatch(actions.GET_POKEMON_DETAILS_REQUEST(id));
-    }, []);
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const { cartLoading } = useCart();
+  const { isLoading, errors, pokemonInfo } = useSelector(
+    pokemonDetailsPageSelector
+  );
+  useEffect(() => {
+    dispatch(actions.GET_POKEMON_DETAILS_REQUEST(id));
+  }, [dispatch, id]);
 
-    if (errors) {
-        console.log(errors);
-    }
+  if (errors) {
+    console.log(errors);
+  }
 
-    return (
-        <PokemonDetailsLayout
-            cartLoading={cartLoading}
-            isLoading={isLoading}
-            pokemonInfo={pokemonInfo}
-        />
-    );
+  return (
+    <PokemonDetailsLayout
+      cartLoading={cartLoading}
+      isLoading={isLoading}
+      pokemonInfo={pokemonInfo}
+    />
+  );
 };

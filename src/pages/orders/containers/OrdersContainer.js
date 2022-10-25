@@ -9,28 +9,26 @@ import * as actions from "../actions";
 import { orderSeletor } from "../selectors";
 
 export const OrdersContainer = () => {
-    const dispatch = useDispatch();
-    const { cartInfo } = useCart();
-    const { customerId, itemsList, totalPrice } = cartInfo;
-    const { orders, isLoading } = useSelector(orderSeletor);
+  const dispatch = useDispatch();
+  const { cartInfo } = useCart();
+  const { customerId, itemsList, totalPrice } = cartInfo;
+  const { orders, isLoading } = useSelector(orderSeletor);
 
-    useEffect(() => {
-        dispatch(actions.GET_ORDERS_REQUEST());
-    }, []);
+  useEffect(() => {
+    dispatch(actions.GET_ORDERS_REQUEST());
+  }, [dispatch]);
 
-    const handleSetOrder = useCallback(() => {
-        dispatch(
-            actions.SET_ORDER_REQUEST({ customerId, itemsList, totalPrice })
-        );
-    }, []);
+  const handleSetOrder = useCallback(() => {
+    dispatch(actions.SET_ORDER_REQUEST({ customerId, itemsList, totalPrice }));
+  }, [dispatch, customerId, itemsList, totalPrice]);
 
-    return (
-        <OrdersLayout
-            orders={orders}
-            isLoading={isLoading}
-            itemsList={itemsList}
-            totalPrice={totalPrice}
-            handleSetOrder={handleSetOrder}
-        />
-    );
+  return (
+    <OrdersLayout
+      orders={orders}
+      isLoading={isLoading}
+      itemsList={itemsList}
+      totalPrice={totalPrice}
+      handleSetOrder={handleSetOrder}
+    />
+  );
 };

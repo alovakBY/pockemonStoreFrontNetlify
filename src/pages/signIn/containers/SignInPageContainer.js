@@ -25,7 +25,7 @@ export const SignInPageContainer = () => {
     if (isAuth) {
       navigate(ROUTE_NAMES.POKEMONS);
     }
-  }, [isAuth]);
+  }, [isAuth, navigate]);
 
   const handleSignIn = (email, password) => {
     dispatch(
