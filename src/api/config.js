@@ -4,7 +4,7 @@ import AuthService from "../services/authService";
 
 // const BASE_URL = "https://it-shatle-demo-api.herokuapp.com";
 const BASE_URL =
-  "https://nimble-baklava-8bff85.netlify.app/.netlify/functions/server";
+  "https://hilarious-kitsune-0cc1d0.netlify.app/.netlify/functions/server";
 // const BASE_URL = "http://localhost:5000/.netlify/functions/server";
 
 const config = {
