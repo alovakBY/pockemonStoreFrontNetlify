@@ -4,7 +4,7 @@ class PokemonService {
   static instance = new PokemonService();
 
   getPokemons(page) {
-    return api.get("/.netlify/functions/server/products", {
+    return api.get("/products", {
       params: {
         page,
         limit: 24,
@@ -13,7 +13,7 @@ class PokemonService {
   }
 
   getPokemonDetails(id) {
-    return api.get(`/.netlify/functions/server/products/${id}`);
+    return api.get(`/products/${id}`);
   }
 }
 
