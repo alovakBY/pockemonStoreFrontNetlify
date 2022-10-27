@@ -9,12 +9,12 @@ class AuthService {
       password,
     };
 
-    return api.post("/auth/signIn", signInData);
+    return api.post("/.netlify/functions/server/auth/signIn", signInData);
   }
 
   signUp(signUpData) {
     console.log(signUpData);
-    return api.post("/server/auth/signUp", signUpData);
+    return api.post("/.netlify/functions/server/auth/signUp", signUpData);
   }
 
   signOut() {

@@ -4,11 +4,11 @@ class OrderService {
   static instance = new OrderService();
 
   getOrders() {
-    return api.get(`/order`);
+    return api.get(`/.netlify/functions/server/order`);
   }
 
   setOrders({ customerId, totalPrice, itemsList }) {
-    return api.post(`/order`, {
+    return api.post(`/.netlify/functions/server/order`, {
       customerId,
       totalPrice,
       itemsList,

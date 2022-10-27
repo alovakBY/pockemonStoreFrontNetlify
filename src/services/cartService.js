@@ -8,7 +8,7 @@ class CartService {
   }
 
   setCartItem({ id, name, image, price, quantity }) {
-    return api.post(`/cart/item`, {
+    return api.post(`/.netlify/functions/server/cart/item`, {
       id,
       name,
       image,
@@ -18,14 +18,14 @@ class CartService {
   }
 
   updateCartItem({ id, quantity }) {
-    return api.patch(`/cart/item`, {
+    return api.patch(`/.netlify/functions/server/cart/item`, {
       id,
       quantity,
     });
   }
 
   deleteCartItem({ id }) {
-    return api.delete(`/cart/item/${id}`);
+    return api.delete(`/.netlify/functions/server/cart/item/${id}`);
   }
 }
 
