@@ -3,8 +3,8 @@ import { LOCAL_STORAGE_KEYS } from "../constants/localStorageKeys";
 import AuthService from "../services/authService";
 
 // const BASE_URL = "https://it-shatle-demo-api.herokuapp.com";
-const BASE_URL = "https://calm-dolphin-423d6b.netlify.app";
-// const BASE_URL = "http://localhost:8888";
+// const BASE_URL = "https://calm-dolphin-423d6b.netlify.app";
+const BASE_URL = "http://localhost:8888";
 
 const config = {
   baseURL: BASE_URL,
