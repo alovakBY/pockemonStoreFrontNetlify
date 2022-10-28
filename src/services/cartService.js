@@ -4,11 +4,11 @@ class CartService {
   static instance = new CartService();
 
   getCartItems() {
-    return api.get(`/cart`);
+    return api.get(`/.netlify/functions/server/cart`);
   }
 
   setCartItem({ id, name, image, price, quantity }) {
-    return api.post(`/cart/item`, {
+    return api.post(`/.netlify/functions/server/cart/item`, {
       id,
       name,
       image,
